@@ -65,6 +65,7 @@ st.markdown(
             font-size: 1.1rem;
             color: #4b5563;
             text-align: center;
+            display: inline-block;
             max-width: 780px;
             margin: 0 auto;
             line-height: 1.6;
@@ -113,18 +114,21 @@ st.markdown(
 # -------- HERO SECTION --------
 st.markdown(
     """
-    <div style="display:flex; justify-content:center; width:100%;">
-        <div class="hero-card" style="max-width: 1100px; width:100%; text-align: center;">
-            <div class="hero-title">🧠 Stress Monitor app</div>
-            <p class="hero-subtitle">
-                A dashboard for educational institutions to understand and manage student stress levels.
-                Navigate through the pages to detect at-risk students, explore stress distributions, and access tailored recommendations for intervention.
-            </p>
+    <div style="display:flex; justify-content:center; width:100%; margin-bottom:2rem;">
+        <div class="hero-card" style="max-width: 1100px; width:100%;">
+            <div style="text-align:center;">
+                <div class="hero-title">🧠 Stress Monitor app</div>
+                <p class="hero-subtitle">
+                    A dashboard for educational institutions to understand and manage student stress levels.<br/>
+                    Navigate through the pages to detect at-risk students, explore stress distributions, and access tailored recommendations for intervention.
+                </p>
+            </div>
         </div>
     </div>
     """,
     unsafe_allow_html=True
 )
+
 
 # -------- DATASET OVERVIEW --------
 
